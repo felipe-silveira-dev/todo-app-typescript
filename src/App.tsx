@@ -86,6 +86,7 @@ function App() {
       if (todo.id === id) {
         todo.isEditing = false;
       }
+      event.currentTarget.value = todo.title;
 
       return todo;
     });
